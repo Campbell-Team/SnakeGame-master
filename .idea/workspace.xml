@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="307d9494-5d88-4a62-9028-81d39174acef" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/moon/snake/SnakeGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moon/snake/SnakeGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/moon/snake/SnakeGame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/moon/snake/SnakeGame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/moon/snake/SnakeGame$Direction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/moon/snake/SnakeGame$Direction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/moon/snake/SnakeGame$GamePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/moon/snake/SnakeGame$GamePanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/moon/snake/SnakeGame$ScorePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/moon/snake/SnakeGame$ScorePanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/moon/snake/SnakeGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/moon/snake/SnakeGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/snake-game-1.0.0.jar" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SandRone772&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Campbell-Team/SnakeGame-master.git&quot;,
+    &quot;accountId&quot;: &quot;0cd23088-6415-47a9-a692-a288c0b6e924&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="3ETujTsMPXGtNSREiRUhI3cnwG2" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="SnakeGame-master" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="SnakeGame-master" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="307d9494-5d88-4a62-9028-81d39174acef" name="Changes" comment="" />
+      <created>1780215015962</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1780215015962</updated>
+    </task>
+    <servers />
+  </component>
+</project>

@@ -17,6 +17,16 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.moon</groupId>
+            <artifactId>moon-obfuscate</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>E:/Moon-Obfuscate-master/target/moon-obfuscate-1.0.0.jar</systemPath>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>

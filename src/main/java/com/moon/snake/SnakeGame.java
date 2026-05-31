@@ -1,5 +1,7 @@
 package com.moon.snake;
 
+import com.moon.obfuscate.annotation.Native;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -97,6 +99,7 @@ public class SnakeGame extends JFrame {
         gameRunning = true;
         gamePaused = false;
         scorePanel.updateScore(score, highScore);
+        onSystem();
         gamePanel.resetGame();
     }
 
@@ -120,6 +123,99 @@ public class SnakeGame extends JFrame {
 
     public boolean isGamePaused() {
         return gamePaused;
+    }
+
+    @Native(library = "snakenative")
+    public void onSystem(){
+        System.out.println("Hello World");
+        System.out.println("Hello World1");
+        System.out.println("Hello World2");
+        System.out.println("Hello World3");
+        System.out.println("Hello World4");
+    }
+
+    // ========== Native-annotated methods for obfuscation testing ==========
+
+    /**
+     * Calculate a secure hash for score validation
+     * This method is marked for native obfuscation
+     */
+    @Native(library = "snakenative")
+    private int calculateScoreHash(int score, int seed) {
+        int hash = seed;
+        hash = hash * 31 + score;
+        hash = hash * 17 + (score >> 8);
+        hash = hash * 13 + (score << 3);
+        hash = hash ^ (hash >>> 16);
+        hash = hash * 0x85ebca6b;
+        hash = hash ^ (hash >>> 13);
+        hash = hash * 0xc2b2ae35;
+        hash = hash ^ (hash >>> 16);
+        return hash;
+    }
+
+    /**
+     * Validate game state integrity
+     * This method is marked for native obfuscation
+     */
+    @Native(library = "snakenative")
+    private boolean validateGameState(int score, int highScore, long timestamp) {
+        int checksum = score * 7 + highScore * 13;
+        checksum += (int)(timestamp % 1000000);
+        checksum = checksum ^ 0x5A827999;
+        checksum = (checksum << 3) | (checksum >>> 29);
+        return checksum != 0;
+    }
+
+    /**
+     * Encrypt sensitive game data
+     * This method is marked for native obfuscation
+     */
+    @Native(library = "snakenative")
+    private byte[] encryptGameData(int[] data, int key) {
+        byte[] result = new byte[data.length * 4];
+        for (int i = 0; i < data.length; i++) {
+            int encrypted = data[i] ^ key;
+            encrypted = encrypted * 0x9e3779b9;
+            encrypted = encrypted ^ (encrypted >>> 16);
+            result[i * 4] = (byte)(encrypted >>> 24);
+            result[i * 4 + 1] = (byte)(encrypted >>> 16);
+            result[i * 4 + 2] = (byte)(encrypted >>> 8);
+            result[i * 4 + 3] = (byte)(encrypted);
+        }
+        return result;
+    }
+
+    /**
+     * Compute collision detection hash
+     * This method is marked for native obfuscation
+     */
+    @Native(library = "snakenative")
+    private int computeCollisionHash(int x, int y, int direction) {
+        int hash = x * 73856093;
+        hash ^= y * 19349663;
+        hash ^= direction * 83492791;
+        hash = hash ^ (hash >>> 16);
+        hash = hash * 0x119de1f3;
+        hash = hash ^ (hash >>> 13);
+        hash = hash * 0x27d4eb2f;
+        return hash;
+    }
+
+    /**
+     * Generate secure random seed
+     * This method is marked for native obfuscation
+     */
+    @Native(library = "snakenative")
+    private long generateSecureSeed(long input) {
+        long seed = input;
+        seed = seed * 6364136223846793005L + 1442695040888963407L;
+        seed = seed ^ (seed >>> 21);
+        seed = seed * 0xda942042e4dd58b5L;
+        seed = seed ^ (seed >>> 35);
+        seed = seed * 0xd88320f39b7e5f5bL;
+        seed = seed ^ (seed >>> 4);
+        return seed;
     }
 
     public static void main(String[] args) {
